@@ -25,12 +25,12 @@ body {
   color: #808080;
 }
 
-#datetime-picker:active {
+#datetime-picker:focus {
   color: #000;
   border: 1px solid #4e75ff;
 }
 
-button {
+.but-timer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -46,11 +46,11 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
-button:hover {
+.but-timer:hover {
   background: #6c8cff;
 }
 
-button:disabled {
+.but-timer:disabled {
   background: #cfcfcf;
   color: #989898;
 }
