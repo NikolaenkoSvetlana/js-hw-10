@@ -74,6 +74,12 @@ class Timer {
       this.onTick(time);
     }, 1000);
   }
+  stop() {
+    clearInterval(this.intervalId);
+    this.isActive = false;
+    const time = this.getTime(0);
+    this.onTick(time);
+  }
 
   getTime(time) {
     const seconds = this.pad(Math.floor((time % (1000 * 60)) / 1000));
